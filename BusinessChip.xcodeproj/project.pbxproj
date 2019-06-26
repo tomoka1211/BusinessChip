@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,10 @@
 		6341667E22C3329A00291493 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6341667C22C3329A00291493 /* LaunchScreen.storyboard */; };
 		6341668922C3329A00291493 /* BusinessChipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6341668822C3329A00291493 /* BusinessChipTests.swift */; };
 		6341669422C3329A00291493 /* BusinessChipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6341669322C3329A00291493 /* BusinessChipUITests.swift */; };
+		634166A222C3466100291493 /* ContactBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634166A122C3466100291493 /* ContactBook.storyboard */; };
+		634166A422C3467D00291493 /* NfcTag.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634166A322C3467D00291493 /* NfcTag.storyboard */; };
+		634166A622C346A100291493 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634166A522C346A100291493 /* MyPage.storyboard */; };
+		634166A822C346B100291493 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634166A722C346B100291493 /* Settings.storyboard */; };
 		66F3B37F133DC93CB6A497E6 /* Pods_BusinessChipUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6DEB22FB008698166A07309 /* Pods_BusinessChipUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +56,10 @@
 		6341668F22C3329A00291493 /* BusinessChipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BusinessChipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6341669322C3329A00291493 /* BusinessChipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessChipUITests.swift; sourceTree = "<group>"; };
 		6341669522C3329A00291493 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		634166A122C3466100291493 /* ContactBook.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactBook.storyboard; sourceTree = "<group>"; };
+		634166A322C3467D00291493 /* NfcTag.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NfcTag.storyboard; sourceTree = "<group>"; };
+		634166A522C346A100291493 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
+		634166A722C346B100291493 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		6C4C5A9024EB73232C1E7204 /* Pods-BusinessChip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusinessChip.debug.xcconfig"; path = "Target Support Files/Pods-BusinessChip/Pods-BusinessChip.debug.xcconfig"; sourceTree = "<group>"; };
 		8CB052A742F2BA99045B842A /* Pods-BusinessChipUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusinessChipUITests.release.xcconfig"; path = "Target Support Files/Pods-BusinessChipUITests/Pods-BusinessChipUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9AB508D936B8BFFC1BC77F3F /* Pods_BusinessChip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusinessChip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +128,10 @@
 				6341667A22C3329A00291493 /* Assets.xcassets */,
 				6341667C22C3329A00291493 /* LaunchScreen.storyboard */,
 				6341667F22C3329A00291493 /* Info.plist */,
+				634166A122C3466100291493 /* ContactBook.storyboard */,
+				634166A322C3467D00291493 /* NfcTag.storyboard */,
+				634166A522C346A100291493 /* MyPage.storyboard */,
+				634166A722C346B100291493 /* Settings.storyboard */,
 			);
 			path = BusinessChip;
 			sourceTree = "<group>";
@@ -152,7 +164,6 @@
 				A76B9E487DB06C5C5BD7DED6 /* Pods-BusinessChipUITests.debug.xcconfig */,
 				8CB052A742F2BA99045B842A /* Pods-BusinessChipUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -275,9 +286,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				634166A422C3467D00291493 /* NfcTag.storyboard in Resources */,
+				634166A622C346A100291493 /* MyPage.storyboard in Resources */,
+				634166A222C3466100291493 /* ContactBook.storyboard in Resources */,
 				6341667E22C3329A00291493 /* LaunchScreen.storyboard in Resources */,
 				6341667B22C3329A00291493 /* Assets.xcassets in Resources */,
 				6341667922C3329900291493 /* Main.storyboard in Resources */,
+				634166A822C346B100291493 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
