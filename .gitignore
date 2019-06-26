@@ -79,3 +79,5 @@ fastlane/test_output
 
 iOSInjectionProject/
 
+# firebase secret-file
+GoogleService-Info.plist

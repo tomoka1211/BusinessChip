@@ -6,6 +6,22 @@ target 'BusinessChip' do
   use_frameworks!
 
   # Pods for BusinessChip
+  pod 'MaterialComponents'
+  pod 'Firebase/Core'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/Performance'
+  pod 'FirebaseUI'
+  pod 'Fabric', '~> 1.9.0'
+  pod 'Crashlytics', '~> 3.12.0'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RealmSwift'
+  pod 'Alamofire'
+  pod 'ObjectMapper'
+  pod 'AlamofireObjectMapper', '~> 5.2'
+  pod 'SwiftLint', '0.23.0'
+  pod 'KeychainAccess'
+  pod 'SVProgressHUD'
 
   target 'BusinessChipTests' do
     inherit! :search_paths
@@ -18,3 +34,4 @@ target 'BusinessChip' do
   end
 
 end
+
