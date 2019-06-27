@@ -21,6 +21,7 @@
 		634166A622C346A100291493 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634166A522C346A100291493 /* MyPage.storyboard */; };
 		634166A822C346B100291493 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634166A722C346B100291493 /* Settings.storyboard */; };
 		634166C922C35FC300291493 /* NfcTagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634166C822C35FC300291493 /* NfcTagViewController.swift */; };
+		634166D622C484A300291493 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634166D522C484A300291493 /* SettingsViewController.swift */; };
 		66F3B37F133DC93CB6A497E6 /* Pods_BusinessChipUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6DEB22FB008698166A07309 /* Pods_BusinessChipUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		634166A722C346B100291493 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		634166C722C35F2A00291493 /* BusinessChip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BusinessChip.entitlements; sourceTree = "<group>"; };
 		634166C822C35FC300291493 /* NfcTagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NfcTagViewController.swift; sourceTree = "<group>"; };
+		634166D522C484A300291493 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		6C4C5A9024EB73232C1E7204 /* Pods-BusinessChip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusinessChip.debug.xcconfig"; path = "Target Support Files/Pods-BusinessChip/Pods-BusinessChip.debug.xcconfig"; sourceTree = "<group>"; };
 		8CB052A742F2BA99045B842A /* Pods-BusinessChipUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BusinessChipUITests.release.xcconfig"; path = "Target Support Files/Pods-BusinessChipUITests/Pods-BusinessChipUITests.release.xcconfig"; sourceTree = "<group>"; };
 		9AB508D936B8BFFC1BC77F3F /* Pods_BusinessChip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BusinessChip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -192,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				634166C822C35FC300291493 /* NfcTagViewController.swift */,
+				634166D522C484A300291493 /* SettingsViewController.swift */,
 			);
 			name = Views;
 			path = BusinessChip/Views;
@@ -495,6 +498,7 @@
 				6341667622C3329900291493 /* ViewController.swift in Sources */,
 				6341667422C3329900291493 /* AppDelegate.swift in Sources */,
 				634166C922C35FC300291493 /* NfcTagViewController.swift in Sources */,
+				634166D622C484A300291493 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
