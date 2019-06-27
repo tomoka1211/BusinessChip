@@ -125,18 +125,18 @@
 		6341667222C3329900291493 /* BusinessChip */ = {
 			isa = PBXGroup;
 			children = (
+				634166CE22C4642500291493 /* Storyboards */,
+				634166CF22C4642500291493 /* Views */,
+				634166D122C4642500291493 /* ViewModels */,
+				634166D222C4642500291493 /* Models */,
+				634166D022C4642500291493 /* Objects */,
+				634166CD22C4642500291493 /* Extensions */,
+				634166CC22C4640B00291493 /* TableViewCells */,
 				634166C722C35F2A00291493 /* BusinessChip.entitlements */,
 				6341667322C3329900291493 /* AppDelegate.swift */,
 				6341667522C3329900291493 /* ViewController.swift */,
-				6341667722C3329900291493 /* Main.storyboard */,
 				6341667A22C3329A00291493 /* Assets.xcassets */,
-				6341667C22C3329A00291493 /* LaunchScreen.storyboard */,
 				6341667F22C3329A00291493 /* Info.plist */,
-				634166A122C3466100291493 /* ContactBook.storyboard */,
-				634166A322C3467D00291493 /* NfcTag.storyboard */,
-				634166A522C346A100291493 /* MyPage.storyboard */,
-				634166A722C346B100291493 /* Settings.storyboard */,
-				634166C822C35FC300291493 /* NfcTagViewController.swift */,
 			);
 			path = BusinessChip;
 			sourceTree = "<group>";
@@ -158,6 +158,68 @@
 			);
 			path = BusinessChipUITests;
 			sourceTree = "<group>";
+		};
+		634166CC22C4640B00291493 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		634166CD22C4642500291493 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extensions;
+			path = BusinessChip/Extensions;
+			sourceTree = SOURCE_ROOT;
+		};
+		634166CE22C4642500291493 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				6341667C22C3329A00291493 /* LaunchScreen.storyboard */,
+				6341667722C3329900291493 /* Main.storyboard */,
+				634166A722C346B100291493 /* Settings.storyboard */,
+				634166A522C346A100291493 /* MyPage.storyboard */,
+				634166A322C3467D00291493 /* NfcTag.storyboard */,
+				634166A122C3466100291493 /* ContactBook.storyboard */,
+			);
+			name = Storyboards;
+			path = BusinessChip/Storyboards;
+			sourceTree = SOURCE_ROOT;
+		};
+		634166CF22C4642500291493 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				634166C822C35FC300291493 /* NfcTagViewController.swift */,
+			);
+			name = Views;
+			path = BusinessChip/Views;
+			sourceTree = SOURCE_ROOT;
+		};
+		634166D022C4642500291493 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Objects;
+			path = BusinessChip/Objects;
+			sourceTree = SOURCE_ROOT;
+		};
+		634166D122C4642500291493 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModels;
+			path = BusinessChip/ViewModels;
+			sourceTree = SOURCE_ROOT;
+		};
+		634166D222C4642500291493 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			path = BusinessChip/Models;
+			sourceTree = SOURCE_ROOT;
 		};
 		6C40F68F43F37CA401ADC46D /* Pods */ = {
 			isa = PBXGroup;
