@@ -13,18 +13,30 @@
         <!--NFC読み取り-->
         <scene sceneID="ZcV-VS-3wD">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gm8-ZW-GFp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="plL-wv-WDP" sceneMemberID="viewController">
+                <viewController id="plL-wv-WDP" customClass="NfcTagViewController" customModule="BusinessChip" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="10H-4q-Qcw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="読み取りに成功した場合、こちらに読み取り結果が表示されます。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TiS-rJ-hXn">
+                                <rect key="frame" x="87" y="259" width="240" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="x69-fE-Y51"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="featured" id="67X-Av-cIf"/>
                     <navigationItem key="navigationItem" title="NFC読み取り" id="goX-5Q-sZe"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tryNfcTV" destination="TiS-rJ-hXn" id="6rE-3c-eNO"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gm8-ZW-GFp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="634.78260869565224" y="22.767857142857142"/>
         </scene>
