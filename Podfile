@@ -22,6 +22,7 @@ target 'BusinessChip' do
   pod 'SwiftLint', '0.23.0'
   pod 'KeychainAccess'
   pod 'SVProgressHUD'
+  pod 'CryptoSwift'
 
   target 'BusinessChipTests' do
     inherit! :search_paths

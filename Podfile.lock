@@ -11,6 +11,7 @@ PODS:
   - BoringSSL-GRPC/Interface (0.0.3)
   - Crashlytics (3.12.0):
     - Fabric (~> 1.9.0)
+  - CryptoSwift (1.0.0)
   - Fabric (1.9.0)
   - FBSDKCoreKit (5.1.1):
     - FBSDKCoreKit/Basics (= 5.1.1)
@@ -827,6 +828,7 @@ DEPENDENCIES:
   - Alamofire
   - AlamofireObjectMapper (~> 5.2)
   - Crashlytics (~> 3.12.0)
+  - CryptoSwift
   - Fabric (~> 1.9.0)
   - Firebase/Core
   - Firebase/Messaging
@@ -847,6 +849,7 @@ SPEC REPOS:
     - AlamofireObjectMapper
     - BoringSSL-GRPC
     - Crashlytics
+    - CryptoSwift
     - Fabric
     - FBSDKCoreKit
     - FBSDKLoginKit
@@ -897,6 +900,7 @@ SPEC CHECKSUMS:
   AlamofireObjectMapper: 92b6ce2423a9d159e686f6a1d514a009bf903ddc
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
   Crashlytics: 07fb167b1694128c1c9a5a5cc319b0e9c3ca0933
+  CryptoSwift: d81eeaa59dc5a8d03720fe919a6fd07b51f7439f
   Fabric: f988e33c97f08930a413e08123064d2e5f68d655
   FBSDKCoreKit: c29b6b65f6a171ca0a317960a622cff62c9ee269
   FBSDKLoginKit: fdaf402766755e1175ed5c0382f25e2e7dab3c2a
@@ -942,6 +946,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftLint: 6ddf7d305644c2239cb768a11d97cce804816691
 
-PODFILE CHECKSUM: 5f720c0fcf56ea2e08278513c230ef1da4d27c9c
+PODFILE CHECKSUM: 0f53a40033f6f6865faad37b519276dd395eac3c
 
 COCOAPODS: 1.7.0.beta.3

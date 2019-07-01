@@ -18,15 +18,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="読み取りに成功した場合、こちらに読み取り結果が表示されます。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TiS-rJ-hXn">
-                                <rect key="frame" x="87" y="259" width="240" height="180"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="読み取りに成功した場合、こちらに読み取り結果が表示されます。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TiS-rJ-hXn">
+                                <rect key="frame" x="87" y="514" width="240" height="180"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="oRR-sB-Fa3"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="画像をタップしてね！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0b-D8-zPZ">
+                                <rect key="frame" x="112" y="368" width="190" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="MXp-dP-wUV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phQ-sK-jip">
+                                <rect key="frame" x="80" y="88" width="254" height="255"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="255" id="7DI-sW-TqK"/>
+                                </constraints>
+                                <state key="normal" image="nfc_image"/>
+                                <connections>
+                                    <action selector="NfcButton:" destination="plL-wv-WDP" eventType="touchUpInside" id="afw-7h-892"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="phQ-sK-jip" firstAttribute="leading" secondItem="x69-fE-Y51" secondAttribute="leading" constant="80" id="4or-vq-6GR"/>
+                            <constraint firstItem="p0b-D8-zPZ" firstAttribute="leading" secondItem="x69-fE-Y51" secondAttribute="leading" constant="112" id="5TR-WG-uHY"/>
+                            <constraint firstItem="x69-fE-Y51" firstAttribute="trailing" secondItem="p0b-D8-zPZ" secondAttribute="trailing" constant="112" id="6bU-mI-072"/>
+                            <constraint firstItem="TiS-rJ-hXn" firstAttribute="top" secondItem="p0b-D8-zPZ" secondAttribute="bottom" constant="125" id="76p-vw-P6K"/>
+                            <constraint firstItem="TiS-rJ-hXn" firstAttribute="leading" secondItem="x69-fE-Y51" secondAttribute="leading" constant="87" id="bcr-vu-Hqy"/>
+                            <constraint firstItem="x69-fE-Y51" firstAttribute="trailing" secondItem="TiS-rJ-hXn" secondAttribute="trailing" constant="87" id="gx2-2Q-uR1"/>
+                            <constraint firstItem="x69-fE-Y51" firstAttribute="trailing" secondItem="phQ-sK-jip" secondAttribute="trailing" constant="80" id="pxh-NY-Oa9"/>
+                            <constraint firstItem="p0b-D8-zPZ" firstAttribute="top" secondItem="phQ-sK-jip" secondAttribute="bottom" constant="25" id="ril-E7-KgU"/>
+                            <constraint firstItem="phQ-sK-jip" firstAttribute="top" secondItem="x69-fE-Y51" secondAttribute="top" id="xJg-wG-tBG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="x69-fE-Y51"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="featured" id="67X-Av-cIf"/>
@@ -59,4 +91,7 @@
             <point key="canvasLocation" x="-275.36231884057975" y="22.767857142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="nfc_image" width="509" height="500"/>
+    </resources>
 </document>

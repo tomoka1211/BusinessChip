@@ -13,18 +13,55 @@
         <!--マイページ-->
         <scene sceneID="JPG-mc-RzV">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dNV-lo-xfA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="eoi-C9-2D7" sceneMemberID="viewController">
+                <viewController id="eoi-C9-2D7" customClass="CryptoViewController" customModule="BusinessChip" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BOK-N0-4lG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PassWord" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m8H-FX-db7">
+                                <rect key="frame" x="68" y="189" width="278" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Z3o-Mo-MNf"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="s6f-eO-mHR">
+                                <rect key="frame" x="62" y="270" width="290" height="210"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="VWX-rW-jqZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSX-39-Ibo">
+                                <rect key="frame" x="110" y="568" width="195" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.62102622169999999" green="0.97435566370000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="復号化する"/>
+                                <connections>
+                                    <action selector="decryptoButton:" destination="eoi-C9-2D7" eventType="touchUpInside" id="jaH-p9-a37"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="s6f-eO-mHR" firstAttribute="top" secondItem="m8H-FX-db7" secondAttribute="bottom" constant="51" id="7fq-Jc-LO8"/>
+                            <constraint firstItem="Ysu-HY-fgf" firstAttribute="trailing" secondItem="s6f-eO-mHR" secondAttribute="trailing" constant="62" id="Cdg-5c-Kod"/>
+                            <constraint firstItem="s6f-eO-mHR" firstAttribute="leading" secondItem="Ysu-HY-fgf" secondAttribute="leading" constant="62" id="DFZ-Ev-jla"/>
+                            <constraint firstItem="m8H-FX-db7" firstAttribute="leading" secondItem="Ysu-HY-fgf" secondAttribute="leading" constant="68" id="Ef0-6J-aHe"/>
+                            <constraint firstItem="m8H-FX-db7" firstAttribute="top" secondItem="Ysu-HY-fgf" secondAttribute="top" constant="101" id="jDu-EL-yxz"/>
+                            <constraint firstItem="Ysu-HY-fgf" firstAttribute="trailing" secondItem="m8H-FX-db7" secondAttribute="trailing" constant="68" id="qDd-wC-Gg2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ysu-HY-fgf"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="history" id="8m6-ub-KKN"/>
                     <navigationItem key="navigationItem" title="マイページ" id="94k-SY-g7E"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dNV-lo-xfA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="634.78260869565224" y="22.767857142857142"/>
         </scene>

@@ -14,6 +14,15 @@ class NfcTagViewController: UIViewController, NFCNDEFReaderSessionDelegate {
     //NFCタグ検証用。削除予定
     @IBOutlet weak var tryNfcTV: UITextView!
     
+    @IBAction func NfcButton(_ sender: Any) {
+        session = NFCNDEFReaderSession(delegate: self,
+                                       queue: nil,
+                                       invalidateAfterFirstRead: true)
+        session.begin()
+        
+    }
+    
+    
     
     var session: NFCNDEFReaderSession!
     
